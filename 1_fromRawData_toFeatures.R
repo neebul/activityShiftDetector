@@ -21,7 +21,7 @@ f_g <- signal::butter(4, 0.02, type= "low")
 f_peak <- signal::butter(4, 0.06, type = "low")
 
 
-# Create columns for the filtered data, and filter data
+# Filter data
 b_x_noise = signal::filtfilt(f_noise, data$x_b)
 b_y_noise = signal::filtfilt(f_noise, data$y_b)	
 b_z_noise = signal::filtfilt(f_noise, data$z_b)
